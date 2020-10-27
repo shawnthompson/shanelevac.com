@@ -1,11 +1,110 @@
+$orange: #ffa500;
+$red: #ff0000;
+$green: rgb(0, 113, 36);
 
 body {
 	background-color: #000;
 	color: #fff;
+	font-size: 1.5em;
+}
+
+header {
+	background-image: url('./img/shaner.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: middle right;
+	height: 300px;
+	
+	// Small devices (landscape phones, 576px and up)
+	@media (min-width: 576px) { 
+		height: 350px;
+	 }
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) { 
+		height: 400px;
+	 }
+
+	// Large devices (desktops, 992px and up)
+	@media (min-width: 992px) { 
+		height: 500px;
+	 }
+
+	// Extra large devices (large desktops, 1200px and up)
+	@media (min-width: 1200px) { 
+		height: 900px;
+	 }
+
+	h1 {
+		text-shadow: 2px 2px 2px rgb(0, 85, 20);
+
+		small {
+			display: block;
+
+			@media (min-width: 576px) { 
+				display: inline;
+			}
+		
+		}
+	}
+}
+
+.bio {
+	.lead {
+		margin-top: 35px;
+		font-size: 2em;
+	}
+
+	strong {
+		color: $orange;
+	}
+
+	.red {
+		color: $red;
+		font-weight: 900;
+
+		strong {
+			color: inherit;
+		}
+	}
+
+	em {
+		color: $red;
+		font-weight: 900;
+	}
 }
 
 .btn {
 	&.btn-support {
-		background-color: rgba($color: #00550d, $alpha: 1.0);
+		background-color: $green;
+
+		&:hover {
+			background-color: $orange;
+			color: #000;
+		}
 	}
 }
+
+.social {
+
+	a {
+		color: #fff;
+		text-shadow: -1px 1px 2px #fff;
+		font-weight: bold;
+
+		&:hover {
+			color: $orange;
+		}
+	}
+}
+
+.playlist {
+	margin-top: 65px;
+	margin-bottom: 65px;
+	
+	h2 {
+		border-top: solid 1px #ccc;
+		padding-top: 30px;
+	}
+}
+

@@ -1,9 +1,104 @@
 body {
   background-color: #000;
   color: #fff;
+  font-size: 1.5em;
+}
+
+header {
+  background-image: url("./img/shaner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: middle right;
+  height: 300px;
+}
+
+@media (min-width: 576px) {
+  header {
+    height: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    height: 900px;
+  }
+}
+
+header h1 {
+  text-shadow: 2px 2px 2px #005514;
+}
+
+header h1 small {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  header h1 small {
+    display: inline;
+  }
+}
+
+.bio .lead {
+  margin-top: 35px;
+  font-size: 2em;
+}
+
+.bio strong {
+  color: #ffa500;
+}
+
+.bio .red {
+  color: #ff0000;
+  font-weight: 900;
+}
+
+.bio .red strong {
+  color: inherit;
+}
+
+.bio em {
+  color: #ff0000;
+  font-weight: 900;
 }
 
 .btn.btn-support {
-  background-color: #00550d;
+  background-color: #007124;
+}
+
+.btn.btn-support:hover {
+  background-color: #ffa500;
+  color: #000;
+}
+
+.social a {
+  color: #fff;
+  text-shadow: -1px 1px 2px #fff;
+  font-weight: bold;
+}
+
+.social a:hover {
+  color: #ffa500;
+}
+
+.playlist {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.playlist h2 {
+  border-top: solid 1px #ccc;
+  padding-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */
