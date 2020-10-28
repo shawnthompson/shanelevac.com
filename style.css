@@ -83,6 +83,11 @@ header h1 small {
   color: #000;
 }
 
+.media .btn:hover {
+  background-color: #ffa500;
+  color: #000;
+}
+
 .social a {
   color: #fff;
   text-shadow: -1px 1px 2px #fff;

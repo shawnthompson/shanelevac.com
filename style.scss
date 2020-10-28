@@ -86,6 +86,15 @@ header {
 	}
 }
 
+.media {
+	.btn {
+		&:hover {
+			background-color: $orange;
+			color: #000;
+		}
+	}
+}
+
 .social {
 
 	a {
