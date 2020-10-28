@@ -14,7 +14,8 @@ header {
 	background-size: cover;
 	background-position: middle right;
 	height: 300px;
-	
+	position: relative;
+
 	// Small devices (landscape phones, 576px and up)
 	@media (min-width: 576px) { 
 		height: 350px;
@@ -105,6 +106,27 @@ header {
 	h2 {
 		border-top: solid 1px #ccc;
 		padding-top: 30px;
+	}
+}
+
+footer {
+	padding: 15px 5px;
+	background-color: #333;
+	font-size: .75em;
+	border-top: solid 1px #999;
+
+	a {
+		color: #fff;
+		text-shadow: -1px 1px 2px #fff;
+		font-weight: bold;
+
+		&:hover {
+			color: $orange;
+		}
+
+		i {
+			margin-right: 10px;
+		}
 	}
 }
 
