@@ -8,6 +8,14 @@ body {
 	font-size: 1.5em;
 }
 
+h1,
+h2,
+h3,
+.font {
+	font-family: 'East Sea Dokdo', cursive;
+	font-size: 4em;
+}
+
 header {
 	background-image: url('./img/shaner.jpg');
 	background-repeat: no-repeat;
@@ -15,6 +23,30 @@ header {
 	background-position: middle right;
 	height: 300px;
 	position: relative;
+	font-family: 'East Sea Dokdo', cursive;
+	
+	h1 {
+		text-shadow: 2px 2px 2px rgb(0, 85, 20);
+		font-size: 4em;
+		margin-top: 25px;
+		margin-bottom: 0;
+		padding: 0;
+
+		small {
+			display: block;
+
+			@media (min-width: 576px) { 
+				display: inline;
+			}
+		
+		}
+	}
+
+	p {
+		font-size: 2em;
+		padding: 0;
+		margin: 0;
+	}
 
 	// Small devices (landscape phones, 576px and up)
 	@media (min-width: 576px) { 
@@ -36,24 +68,13 @@ header {
 		height: 900px;
 	 }
 
-	h1 {
-		text-shadow: 2px 2px 2px rgb(0, 85, 20);
-
-		small {
-			display: block;
-
-			@media (min-width: 576px) { 
-				display: inline;
-			}
-		
-		}
-	}
 }
 
 .bio {
 	.lead {
 		margin-top: 35px;
-		font-size: 2em;
+		font-family: 'East Sea Dokdo', cursive;
+		font-size: 4em;
 	}
 
 	strong {
@@ -75,6 +96,10 @@ header {
 	}
 }
 
+.card-title {
+	font-size: 2em;
+}
+
 .btn {
 	&.btn-support {
 		background-color: $green;
@@ -86,12 +111,23 @@ header {
 	}
 }
 
-#bands {
-	.col {
-		margin: 10px;
-		padding: 20px;
+#music {
+
+	margin-top: 50px;
+
+	h2 {
+		text-align: center;
+		font-size: 5em;
+	}
+
+	#bands {
+		.col {
+			margin: 10px;
+			padding: 20px;
+		}
 	}
 }
+
 
 .media {
 	.btn {
